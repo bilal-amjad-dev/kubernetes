@@ -12,5 +12,4 @@ This means that a client running outside of the cluster, such as a user accessin
 The NodePort Service provides a way to expose your application to external clients. 
 
 An external client is anyone who is trying to access your application from outside of the Kubernetes cluster.
-vice YAML has a `selector` field under its `spec`. The Service uses this selector (`app: my-nginx-app`)
 
