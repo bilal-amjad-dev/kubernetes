@@ -1,5 +1,5 @@
 
-**Note: For the Service to connect to the Pod, you need to add a label to the Pod's metadata. Here's an updated version of the Pod YAML that includes the required label:**
+**Note:** For the Service to connect to the Pod, you need to add a label to the Pod's metadata. Here's an updated version of the Pod YAML that includes the required label.
 
 
 This is pod.yaml
@@ -39,4 +39,6 @@ spec:
 
 - The Pod YAML has a `labels` field under its `metadata`. In the example, this is `app: my-nginx-app`.
 
-- The Ser
+- The Service YAML has a `selector` field under its `spec`. The Service uses this selector (`app: my-nginx-app`)
+
+- This is how Kubernetes Services know which Pods to send traffic to. The selector is the "glue" that connects a Service to its corresponding Pods.
