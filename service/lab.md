@@ -4,7 +4,7 @@
 Here's an updated version of the Pod YAML that includes the required label.
 
 
-This is pod.yaml
+`vi pod.yaml`
 ```bash
 apiVersion: v1
 kind: Pod
@@ -20,7 +20,8 @@ spec:
     - containerPort: 80
 ```
 
-`service.yaml`:
+
+`vi service.yaml`:
 ```bash
 apiVersion: v1
 kind: Service
@@ -36,7 +37,13 @@ spec:
   type: NodePort
 ```
 
+```bash
+kubectl apply -f pod.yaml
+```
 
+```bash
+kubectl apply -f service.yaml
+```
 
 
 - The Pod YAML has a `labels` field under its `metadata`. In the example, this is `app: my-nginx-app`.
