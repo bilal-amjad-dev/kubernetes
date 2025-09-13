@@ -1,13 +1,13 @@
 
-- Another way to create a namespace
+**Create a namespace**
 
 ```bash
 kubectl create namespace dev
 ```
 
 
+**To limit resources in a namespace, create a resource quota**
 
-- To limit resources in a namespace, create a resource quota.
 ```bash
 apiVersion: v1
 kind: ResourceQuota
