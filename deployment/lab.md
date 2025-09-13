@@ -1,6 +1,6 @@
 
 
-Create a new deployment with the nginx image.
+`vi deployment.yaml`
 
 ```bash
 apiVersion: apps/v1
@@ -22,4 +22,9 @@ spec:
         image: nginx:latest # The Docker image to use for your application (e.g., Nginx web server)
         ports:
         - containerPort: 80 # The port your application listens on inside the container
+```
+
+
+```bash
+kubectl apply -f deployment.yaml
 ```
