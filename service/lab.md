@@ -1,5 +1,7 @@
 
-**Note:** For the Service to connect to the Pod, you need to add a label to the Pod's metadata. Here's an updated version of the Pod YAML that includes the required label.
+**Note:** *For the Service to connect to the Pod, you need to add a label to the Pod's metadata.*
+
+Here's an updated version of the Pod YAML that includes the required label.
 
 
 This is pod.yaml
